@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Mode d'emploi Orion XS</title>
+<style>
+  @page { size: A4; margin: 14mm 14mm 16mm; }
+  * { box-sizing: border-box; }
+  body { font-family: "Segoe UI", Arial, sans-serif; color: #141B2D; font-size: 17pt; line-height: 1.4; margin: 0; }
+  h1 { font-size: 30pt; margin: 0 0 4pt; color: #1D5FD1; }
+  .lead { font-size: 16pt; color: #4A5368; margin: 0 0 14pt; }
+  h2 { font-size: 22pt; margin: 14pt 0 6pt; padding: 6pt 12pt; background: #E6EEFC; border-radius: 10pt; color: #0C2557; page-break-after: avoid; }
+  ol { padding-left: 26pt; margin: 6pt 0; }
+  li { margin: 6pt 0; }
+  b { color: #0C2557; }
+  .btn { display: inline-block; padding: 1pt 9pt; border-radius: 8pt; background: #1D5FD1; color: #fff; font-weight: 600; }
+  .btn.green { background: #1DA851; }
+  .note { background: #FFF6E0; border-left: 6pt solid #E0A100; padding: 8pt 12pt; border-radius: 6pt; margin: 10pt 0; font-size: 15pt; }
+  .ok { background: #E7F6EE; border-left: 6pt solid #16894D; padding: 8pt 12pt; border-radius: 6pt; margin: 10pt 0; font-size: 15pt; }
+  .row { display: flex; gap: 16pt; align-items: flex-start; page-break-inside: avoid; }
+  .row .txt { flex: 1; }
+  .shot { width: 150pt; border-radius: 14pt; border: 1.5pt solid #D9DEE8; }
+  .page { page-break-before: always; }
+  .big-help { text-align: center; font-size: 20pt; padding: 14pt; border: 3pt solid #1DA851; border-radius: 16pt; margin: 4pt 0 6pt; }
+</style>
+</head>
+<body>
+
+<h1>⚡ Mode d'emploi : Orion XS</h1>
+<p class="lead">L'application affiche les tensions de votre chargeur Victron et note une mesure chaque heure.</p>
+<div class="big-help">Un doute ? <b>Aide → bouton vert → Envoyer.</b><br>Je m'occupe du reste 🙂</div>
+
+<h2>1. Installer l'application</h2>
+<ol>
+  <li>Dans WhatsApp, touchez le fichier <b>OrionXS</b> (qui se termine par « .apk ») que je vous ai envoyé.</li>
+  <li>Si le téléphone affiche <b>« Pour votre sécurité… »</b> : touchez <b>Paramètres</b>, activez l'interrupteur <b>Autoriser</b>, puis revenez en arrière.</li>
+  <li>Touchez <b>Installer</b>. Si un message « application non vérifiée » (Play Protect) apparaît, touchez <b>Plus de détails</b> puis <b>Installer quand même</b>.</li>
+  <li>Touchez <b>Ouvrir</b>.</li>
+</ol>
+<div class="note">📵 Si Samsung bloque l'installation (<b>« Bloqueur automatique »</b>) : ouvrez <b>Paramètres → Sécurité et confidentialité → Bloqueur automatique</b>, désactivez-le, installez l'application, puis vous pourrez le réactiver.</div>
+
+<h2>2. Préparer l'application (une seule fois)</h2>
+<div class="row">
+  <div class="txt">
+    <ol>
+      <li>Touchez <span class="btn">Commencer</span>.</li>
+      <li>Touchez chaque bouton bleu, puis répondez <b>« Autoriser »</b> à <u>chaque</u> question du téléphone.</li>
+      <li>Pour la batterie, répondez <b>« Autoriser »</b> : c'est ce qui permet de mesurer même écran éteint.</li>
+      <li>Touchez <span class="btn">Continuer</span>.</li>
+    </ol>
+  </div>
+  <img class="shot" src="../captures/setup.png" alt="">
+</div>
+<div class="row">
+  <div class="txt">
+    <p><b>La clé du chargeur</b> se trouve dans l'application <b>VictronConnect</b> :</p>
+    <ol>
+      <li>Ouvrez VictronConnect près du chargeur et touchez votre <b>Orion XS</b>.</li>
+      <li>Touchez la roue dentée ⚙ en haut à droite, puis les 3 points ⋮, puis <b>Info produit</b>.</li>
+      <li>Vérifiez que <b>Lecture instantanée via Bluetooth</b> est activée.</li>
+      <li>À la ligne <b>Détails de la lecture instantanée</b>, touchez <b>Afficher</b> : la clé fait 32 caractères.</li>
+      <li>Copiez-la (ou recopiez-la), revenez dans Orion XS, touchez <span class="btn">Coller la clé</span> (ou tapez-la), puis <span class="btn">Enregistrer la clé</span>.</li>
+      <li>Touchez <span class="btn green">Terminer</span>.</li>
+    </ol>
+  </div>
+  <img class="shot" src="../captures/cle.png" alt="">
+</div>
+
+<h2>3. Tous les jours</h2>
+<div class="row">
+  <div class="txt">
+    <p>Ouvrez <b>Orion XS</b> (l'icône bleue avec un éclair).</p>
+    <ul>
+      <li>En <b style="color:#1D5FD1">bleu</b> : la tension d'<b>entrée</b>.</li>
+      <li>En <b style="color:#D9530B">orange</b> : la tension de <b>sortie</b>.</li>
+      <li>Un point <b style="color:#16894D">vert « En direct »</b> veut dire que tout fonctionne.</li>
+    </ul>
+    <div class="ok">✅ Une petite notification <b>« Chargeur Orion XS »</b> reste toujours affichée. C'est normal : elle montre que l'application surveille. <b>Ne la désactivez pas.</b></div>
+    <p>Vous n'avez <b>rien à faire</b> : l'application fonctionne toute seule, même téléphone en veille, et repart seule si le téléphone redémarre.</p>
+  </div>
+  <img class="shot" src="../captures/direct.png" alt="">
+</div>
+
+<h2>4. L'historique</h2>
+<div class="row">
+  <div class="txt">
+    <p>Touchez <b>Historique</b> en bas de l'écran : vous voyez une courbe et la liste des mesures, heure par heure.</p>
+    <p>Les mesures sont aussi enregistrées automatiquement dans le fichier <b>orion_xs_historique.csv</b>, dans <b>Mes fichiers → Téléchargements → OrionXS</b>. Il s'ouvre avec Excel. Vous n'avez rien à faire.</p>
+  </div>
+  <img class="shot" src="../captures/historique.png" alt="">
+</div>
+
+<h2>5. Si quelque chose ne va pas</h2>
+<div class="row">
+  <div class="txt">
+    <ol>
+      <li>Touchez <b>Aide</b> en bas à droite.</li>
+      <li>Touchez le <b>gros bouton vert</b> <span class="btn green">Envoyer un diagnostic par WhatsApp</span></li>
+      <li>Si WhatsApp demande à qui envoyer, choisissez <b>mon nom</b>.</li>
+      <li>Touchez la flèche verte <b>Envoyer</b>.</li>
+    </ol>
+    <p>C'est tout : je recevrai les informations pour régler le problème à distance.</p>
+    <p>Dans la même page, un <b>point rouge</b> signale un réglage à corriger. Touchez <b>Corriger</b> à côté et répondez <b>Autoriser</b>.</p>
+  </div>
+  <img class="shot" src="../captures/aide.png" alt="">
+</div>
+
+
+</body>
+</html>

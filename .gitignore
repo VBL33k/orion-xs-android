@@ -1,0 +1,18 @@
+# Compilation
+.gradle/
+build/
+.kotlin/
+local.properties
+*.apk
+*.aab
+
+# Secrets : ne jamais publier
+keystore/
+secrets.properties
+*.jks
+*.keystore
+
+# Éditeurs
+.idea/
+*.iml
+.DS_Store
